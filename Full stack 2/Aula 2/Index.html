@@ -1,0 +1,35 @@
+<html>
+
+<head>
+  <title>Vue 2</title>
+  <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+</head>
+
+<body>
+
+  <div id="app">
+    <button v-on:click="mostrarJogo=true">mostrar jogo</button>
+    <br><br>
+    <button v-on:click="mostrarJogo=false">esconder jogo</button>
+
+    <div v-if="mostrarJogo">
+        <p>produto: {{jogos[0].nome}} | fabricante:{{jogos[0].fabricante}} | preço: {{jogos[0].preco}}</p>
+        <p>produto: {{jogos[1].nome}} | fabricante:{{jogos[1].fabricante}} | preço: {{jogos[1].preco}}</p>
+        <p>produto: {{jogos[2].nome}} | fabricante:{{jogos[2].fabricante}} | preço: {{jogos[2].preco}}</p>
+    </div>
+
+  </div>
+  <!-- v-on pode ser substituido por @
+    
+    <button @click="preco=0">não vou pagar</button>
+  v-on:click
+  v-on:keyup
+  v-on:mouseenter
+  v-on:focus
+  v-on:change -->
+
+
+  <script src="app.js"></script>
+</body>
+
+</html>

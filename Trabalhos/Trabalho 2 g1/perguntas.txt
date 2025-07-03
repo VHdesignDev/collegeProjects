@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ptbr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Informações</title>
+    <link rel ="stylesheet" href="info.css">
+</head>
+<body>
+    <div class = "cabecalho">
+        Biblioteca
+    </div>
+    <div class = "atual">
+        INFORMAÇÕES
+    </div>        
+    <div class = "container">
+        <div class = "abas">
+
+        <p><a href = "Trabalho 2 G1.html">Home</a></a></p><br>
+        <p><a href = "info.html">Informações</a></p><br>
+        <p><a href = "cat.html">Catálogo On-line (Gnuteca)</a></p><br>
+        <p><a href = "#">Portal de Periódicos CAPES/MEC</a></p><br>
+        <p><a href = "#">Horário de Funcionamento</a></p><br>
+        <p><a href = "#">Regulamento da Biblioteca</a></p><br>
+        <p><a href = "#">Multas</a></p><br>
+        <p><a href = "#">Perguntas Frequentes</a></p><br>
+        <p><a href = "#">Pós-Graduação</a></p><br>
+        <p><a href = "#">Bibliotecária Responsável</a></p><br>
+
+        </div>
+        <div class = "conteudo">
+        <p>
+            <h1>MULTAS</h1><br><br>
+            O sistema da Biblioteca passará a perdoar a multa dos usuários que atrasarem a devolução do material por apenas dois dias.<br><br>
+
+Este benefício visa atender aos alunos que não conseguem renovar e não estudam todos os dias na Instituição.
+<br><br>
+Lembrando que são apenas os dois primeiros dias, quem devolver a partir do terceiro dia de atraso será cobrado integral o valor da multa, desde o primeiro dia de atraso
+<br><br>        
+</p>
+        </div>
+    </div>

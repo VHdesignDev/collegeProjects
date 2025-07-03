@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang = "ptbr">
+<head>
+    <meta charset="UTF-8">
+    <title>carrinho</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel ="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+
+
+    <div class="banner">
+        <div class="barra">
+            <a href="home.html"><img src="logo2.png" class="logo"></a>
+                <ul>
+                <li><a href= "carrinho.html"><img src="carrinho.png" style="height: 35px;"></a></li>
+                <li><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal" style="background-color:#F9EB36;">
+                    <img src="Login.png" style="width: 20px;"> Login
+                </button></li>
+                </ul>
+                <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+                <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+                <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Informações de Login</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <p style="color: #F9EB36; font-size: 25px;" >Digite seu nome</p>
+                                <input type="text" id="nome" placeholder="Ex: João da Silva Júnior" style="width: 100%; height: 40px;">
+                                <p style="color: #F9EB36; font-size: 25px; " >Digite seu endereço</p>
+                                <input type="text" id="endereço" placeholder="Ex: R. Carlos Gomes, 286 - Centro" style="width: 100%; height: 40px; padding-bottom: 15px;">
+                                <p style="color: #F9EB36; font-size: 25px; " >Digite sua cidade</p>
+                                <input type="text" id="cidade" placeholder="Ex: Taquara-RS" style="width: 100%; height: 40px;">
+                                <p style="color: #F9EB36; font-size: 25px;" >Digite seu cpf</p>
+                                <input type="text" id="cpf" placeholder="Ex: 123.456.789-12" style="width: 100%; height: 40px;">
+                                <p style="color: #F9EB36; font-size: 25px;" >Digite sua senha</p>
+                                <input type="password" id="senha" style="width: 100%; height: 40px;">
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" style="background-color: #3E3E3D;" data-dismiss="modal">Fechar</button>
+                                <button type="button" class="btn btn-primary" style="background-color: #F9EB36;" data-dismiss="modal">Salvar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="barraV" style="max-height: 80px;">
+                   <div><img src="T1.jpg" style="border-radius: 10%; max-width: 70px;"></div>
+                <ul><li><button class="btn btn-primary" onclick="decrementar()" style="background-color: #F9EB36;">-</button></li>
+                <li><input type="number" id="numero" class="form-control" value="0" readonly style="max-width: 100%;"></li>
+                <li><button class="btn btn-primary" onclick="incrementar()" style="background-color: #F9EB36">+</button></li></ul>
+                <h5 style="font-family: Verdana, Geneva, Tahoma, sans-serif; color: #3E3E3D; font-weight: bold;">R$ 100,00</h5>
+                </div>
+                <div class="barraV" style="max-height: 80px;">
+                    <div><img src="C2.jpg" style="border-radius: 10%; max-width: 70px;"></div>
+                 <ul><li><button class="btn btn-primary" onclick="decrementar2()" style="background-color: #F9EB36;">-</button></li>
+                 <li><input type="number" id="numero2" class="form-control" value="0" readonly style="max-width: 100%;"></li>
+                 <li><button class="btn btn-primary" onclick="incrementar2()" style="background-color: #F9EB36">+</button></li></ul>
+                 <h5 style="font-family: Verdana, Geneva, Tahoma, sans-serif; color: #3E3E3D; font-weight: bold;">R$ 100,00</h5>
+                 </div>
+                 <div class="barraV" style="max-height: 80px;">
+                    <div><img src="C4.jpg" style="border-radius: 10%; max-width: 70px;"></div>
+                 <ul><li><button class="btn btn-primary" onclick="decrementar3()" style="background-color: #F9EB36;">-</button></li>
+                 <li><input type="number" id="numero3" class="form-control" value="0" readonly style="max-width: 100%;"></li>
+                 <li><button class="btn btn-primary" onclick="incrementar3()" style="background-color: #F9EB36">+</button></li></ul>
+                 <h5 style="font-family: Verdana, Geneva, Tahoma, sans-serif; color: #3E3E3D; font-weight: bold;">R$ 100,00</h5>
+                 </div>
+                 <div class="barraV" style="max-height: 80px;">
+                    <div><img src="T4.jpg" style="border-radius: 10%; max-width: 70px;"></div>
+                 <ul><li><button class="btn btn-primary" onclick="decrementar4()" style="background-color: #F9EB36;">-</button></li>
+                 <li><input type="number" id="numero4" class="form-control" value="0" readonly style="max-width: 100%;"></li>
+                 <li><button class="btn btn-primary" onclick="incrementar4()" style="background-color: #F9EB36">+</button></li></ul>
+                 <h5 style="font-family: Verdana, Geneva, Tahoma, sans-serif; color: #3E3E3D; font-weight: bold;">R$ 420,69</h5>
+                 </div>
+                 <div class="barraV" style="max-height: 80px;">
+                    <div><img src="C1.jpg" style="border-radius: 10%; max-width: 70px;"></div>
+                 <ul><li><button class="btn btn-primary" onclick="decrementar5()" style="background-color: #F9EB36;">-</button></li>
+                 <li><input type="number" id="numero5" class="form-control" value="0" readonly style="max-width: 100%;"></li>
+                 <li><button class="btn btn-primary" onclick="incrementar5()" style="background-color: #F9EB36">+</button></li></ul>
+                 <h5 style="font-family: Verdana, Geneva, Tahoma, sans-serif; color: #3E3E3D; font-weight: bold;">R$ 100,00</h5>
+                 </div>
+                 
+            <script>
+                function incrementar() {
+                  var numeroInput = document.getElementById('numero');
+                  var numero = parseInt(numeroInput.value);
+                  numeroInput.value = numero + 1;
+                }
+              
+                function decrementar() {
+                  var numeroInput = document.getElementById('numero');
+                  var numero = parseInt(numeroInput.value);
+                  if (numero > 0) {
+                    numeroInput.value = numero - 1;
+                  }
+                }
+              </script>
+                          <script>
+                function incrementar2() {
+                  var numeroInput = document.getElementById('numero2');
+                  var numero2 = parseInt(numeroInput.value);
+                  numeroInput.value = numero2 + 1;
+                }
+              
+                function decrementar2() {
+                  var numeroInput = document.getElementById('numero2');
+                  var numero2 = parseInt(numeroInput.value);
+                  if (numero2 > 0) {
+                    numeroInput.value = numero2 - 1;
+                  }
+                }
+              </script>
+                          <script>
+                function incrementar3() {
+                  var numeroInput = document.getElementById('numero3');
+                  var numero3 = parseInt(numeroInput.value);
+                  numeroInput.value = numero3 + 1;
+                }
+              
+                function decrementar3() {
+                  var numeroInput = document.getElementById('numero3');
+                  var numero3 = parseInt(numeroInput.value);
+                  if (numero3 > 0) {
+                    numeroInput.value = numero3 - 1;
+                  }
+                }
+              </script>
+                          <script>
+                function incrementar4() {
+                  var numeroInput = document.getElementById('numero4');
+                  var numero4 = parseInt(numeroInput.value);
+                  numeroInput.value = numero4 + 1;
+                }
+              
+                function decrementar4() {
+                  var numeroInput = document.getElementById('numero4');
+                  var numero4 = parseInt(numeroInput.value);
+                  if (numero4 > 0) {
+                    numeroInput.value = numero4 - 1;
+                  }
+                }
+              </script>
+                          <script>
+                function incrementar5() {
+                  var numeroInput = document.getElementById('numero5');
+                  var numero5 = parseInt(numeroInput.value);
+                  numeroInput.value = numero5 + 1;
+                }
+              
+                function decrementar5() {
+                  var numeroInput = document.getElementById('numero5');
+                  var numero5 = parseInt(numeroInput.value);
+                  if (numero5 > 0) {
+                    numeroInput.value = numero5 - 1;
+                  }
+                }
+              </script>
+  <div class="barraC">
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" style="background-color: #F9EB36; color: #3E3E3D; font-family: Verdana, Geneva, Tahoma, sans-serif; font-weight: 700;">
+    <img src="pagamento.png" style="max-height: 20px;"> Pagamento
+  </button>
+  </div>
+
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel" style="color: #F9EB36;">Selecione uma opção de pagamento</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+
+                <div class="dropdown">
+                  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="font-family: Verdana, Geneva, Tahoma, sans-serif;">
+                    selecione uma opção
+                  </button>
+                  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" onclick="showFields('A')">cartão</a>
+                    <a class="dropdown-item" onclick="showFields('B')">boleto</a>
+                    <a class="dropdown-item" onclick="showFields('C')">pix</a>
+                  </div>
+                </div>
+
+
+                <div id="fieldsA" style="display: none;">
+                  <p style="color: #3E3E3D; font-size: 20px; margin-bottom: 0%;" >Digite os 16 números da frente do cartão</p>
+                  <input type="text" id="cartao" placeholder="Ex: 1234 5678 9012 3456" style="width: 100%; height: 40px;">
+                  <p style="color: #3E3E3D; font-size: 20px; margin-bottom: 0%;" >Digite o código de segurança do cartão</p>
+                  <input type="text" id="cvv" placeholder="Ex: 123" style="width: 100%; height: 40px;">
+                  <p style="color: #3E3E3D; font-size: 20px; margin-bottom: 0%;" >Digite o nome do portador do cartão</p>
+                  <input type="text" id="nome" placeholder="Ex: João da Silva" style="width: 100%; height: 40px;">
+                </div>
+                <div id="fieldsB" style="display: none; padding-top: 30px;">
+                  <button class="btn btn-primary" onclick="downloadFile()" style="background-color: #F9EB36; color: #3E3E3D; font-family: Verdana, Geneva, Tahoma, sans-serif;">Baixar boleto</button>
+                </div>
+                <div id="fieldsC" style="display: none; text-align: center;">
+                  <img src="qrcode.jpg" style="max-height: 200px;">
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <script>
+          function showFields(option) {
+
+            document.getElementById("fieldsA").style.display = "none";
+            document.getElementById("fieldsB").style.display = "none";
+            document.getElementById("fieldsC").style.display = "none";
+
+            if (option === "A") {
+              document.getElementById("fieldsA").style.display = "block";
+            } else if (option === "B") {
+              document.getElementById("fieldsB").style.display = "block";
+            } else if (option === "C") {
+              document.getElementById("fieldsC").style.display = "block";
+            }
+          }
+        </script>
+          <script>
+            function downloadFile() {
+              var fileUrl = 'boleto.pdf';
+              var fileName = 'boleto';
+              var link = document.createElement('a');
+              link.href = fileUrl;
+              link.download = fileName;
+              link.click();
+            }
+          </script>
+          
+        </div>
+    </div>

@@ -1,0 +1,99 @@
+
+  /* 1. Animação de movimento circular */
+.circular {
+    width: 100px;
+    height: 100px;
+    top: 50px;
+    left: 150px;
+    background-color: red;
+    position: relative;
+    border-radius: 50%;
+    animation: circular 2s infinite;
+  }
+  
+  @keyframes circular {
+    0% {
+      transform: rotate(0deg) translate(100px) rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg) translate(100px) rotate(-360deg);
+    }
+  }
+
+  /* 2. Animação de quicar */
+  .quicar {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(134, 11, 32);
+    position: absolute;
+    bottom: 0;
+    animation: quicar 0.5s ease-in-out infinite alternate;
+  }
+  
+  @keyframes quicar {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(-20px);
+    }
+  }
+    /* 3. Aumento de escala */
+.escala {
+    width: 100px;
+    height: 100px;
+    top: 200px;
+    left: 150px;
+    background-color: green;
+    transition: transform 0.3s;
+  }
+  
+  .escala:hover {
+    transform: scale(1.2);
+  }
+/* 4. Colisão */
+.colisao1 {
+    width: 50px;
+    height: 50px;
+    top: 400px;
+    left: 150px;
+    background-color: yellow;
+    position: absolute;
+    left: 0;
+    animation: colisao1 2s ease-in-out infinite alternate;
+  }
+  
+  .colisao2 {
+    width: 50px;
+    height: 50px;
+    top: 400px;
+    left: 250px;
+    background-color: orange;
+    position: absolute;
+    left: 500;
+    animation: colisao2 2s ease-in-out infinite alternate;
+  }
+  
+  @keyframes colisao1 {
+    0% {
+        transform: translateX(0px);
+      }
+      50%{
+          transform: translateX(100px);
+      }
+      100% {
+        transform: translateX(0px);
+      }
+}
+      @keyframes colisao2 {
+    0% {
+      transform: translateX(0px);
+    }
+    50%{
+        transform: translateX(-100px);
+    }
+    100% {
+      transform: translateX(0px);
+    }
+  }
+

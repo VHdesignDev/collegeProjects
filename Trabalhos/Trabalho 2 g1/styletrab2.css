@@ -1,0 +1,50 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+ }
+ .container{
+    width: 100%;
+    position: absolute;
+    display: flex;
+}
+.cabecalho{
+    width: 100%;
+    padding: 45px 0 ;
+    text-align: center;
+    background-color: rgb(40, 40, 126);
+    color: #fff;
+    font-size: 60px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.atual{
+    width: 100%;
+    padding: 10px 0 ;
+    text-align: center;
+    background-color: rgb(92, 92, 177);
+    color: #fff;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.conteudo{
+    width: 80%;
+    
+    
+}
+.abas{
+    width: 30%;
+    padding: 25px 25px;
+    font-size: 20px;
+}
+.abas p {
+  
+    text-align: center;
+    background-color: rgb(218, 218, 218);
+    font-size: 20px;
+    padding: 25px 0;
+}
+
+
+a {
+    text-decoration: none !important;
+  }
